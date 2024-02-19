@@ -1,2 +1,10 @@
 <app-example-a [headline]="'Testüberschrift'"></app-example-a>
 <app-example-b></app-example-b>
+
+<nav>
+    <ul>
+        <li>
+            <a [routerLink]="['example-aComponent']" routerLink="active" ariaCurrentWhenActive="page">ExampleA</a>
+        </li>
+    </ul>
+</nav>
