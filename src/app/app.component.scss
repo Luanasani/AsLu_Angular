@@ -1,0 +1,49 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #6facee;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    background-color: #007bff; /* Hintergrundfarbe der Links */
+    padding: 10px 15px; /* Innenabstand der Links */
+    border-radius: 5px; /* Abrundung der Ecken */
+}
+nav li a {
+    color: #fff; /* Schriftfarbe der Links */
+    text-decoration: none; /* Entfernt Unterstreichungen von Links */
+}
+
+nav li a:hover {
+    text-decoration: underline; /* Fügt Unterstreichung hinzu, wenn Maus über Link */
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: red;
+}
+

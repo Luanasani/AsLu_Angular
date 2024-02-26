@@ -12,4 +12,11 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'AsaniLuan_Angular';
+  clickedButton: string | null = null;
+
+  buttonClicked(buttonName: string) {
+    this.clickedButton = buttonName;
+  }
 }
+
+

@@ -1,10 +1,21 @@
-<app-example-a [headline]="'Testüberschrift'"></app-example-a>
-<app-example-b></app-example-b>
+<div class="container">
+    <app-example-a [headline]="'Testüberschrift'"></app-example-a>
+    <app-example-b></app-example-b>
 
-<nav>
-    <ul>
-        <li>
-            <a [routerLink]="['example-aComponent']" routerLink="active" ariaCurrentWhenActive="page">ExampleA</a>
-        </li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li>
+                <a [routerLink]="['example-aComponent']" routerLinkActive="active" ariaCurrentWhenActive="page">ExampleA</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="button-container">
+        <button class="button" (click)="buttonClicked('rechter')">Rechter Button</button>
+        <button class="button" (click)="buttonClicked('linker')">Linker Button</button>
+    </div>
+
+    <div class="message" *ngIf="clickedButton">
+        Du hast den {{ clickedButton }} Button gedrückt.
+    </div>
+</div>
